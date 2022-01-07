@@ -1,0 +1,31 @@
+name: compressed
+
+on:
+  push:
+    branches: 
+      - raw
+jobs:
+  compressed:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14]
+    name: compressed db.json file
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+          node-version: ${{ matrix.node-version }}
+    - name: compressed
+      run: npx zipjson@1.0.1 db.json db.json --ci
+    - name: commit
+      run: |
+            git checkout --orphan main
+            git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            rm -rf .github
+            git add -A .
+            git commit -m "${{ github.event.head_commit.message }}"
+            git push origin main:main --force
