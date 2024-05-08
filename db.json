@@ -25,6 +25,39 @@
       }
     ]
   },
+  "images": {
+    "github": "https://github.com/wxh16144/img",
+    "baseurl": "https://wxh16144.github.io/img/",
+    "list": [
+      "a.jpg",
+      "b.jpg",
+      "c.jpg",
+      "d.jpg",
+      "e.jpg",
+      "f.jpg",
+      "g.jpg",
+      "h.jpg",
+      "i.jpg",
+      "j.jpg",
+      "k.jpg",
+      "l.jpg",
+      "m.jpg",
+      "n.jpg",
+      "o.jpg",
+      "p.jpg",
+      "q.jpg",
+      "r.jpg",
+      "s.jpg",
+      "t.jpg",
+      "u.jpg",
+      "v.jpg",
+      "w.jpg",
+      "x.jpg",
+      "x.gif",
+      "y.gif",
+      "z.gif"
+    ]
+  },
   "videos": [
     {
       "description": "Big Buck Bunny tells the story of a giant rabbit with a heart bigger than himself. When one sunny day three rodents rudely harass him, something snaps... and the rabbit ain't no bunny anymore! In the typical cartoon tradition he prepares the nasty rodents a comical revenge.\n\nLicensed under the Creative Commons Attribution license\nhttp://www.bigbuckbunny.org",
